@@ -120,7 +120,6 @@
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/scopedcss/bundle/dsv mini.styles.css
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/scopedcss/projectbundle/dsv mini.bundle.scp.css
-/Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/compressed/r5lhvnvqqg-{0}-lugek5hnai-lugek5hnai.gz
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/compressed/geaxbn2936-{0}-61n19gt1b8-61n19gt1b8.gz
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/compressed/rq1kkaq99s-{0}-fr7q2aak1r-fr7q2aak1r.gz
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/compressed/sshozb9970-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -194,3 +193,4 @@
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/dsv mini.pdb
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/dsv mini.genruntimeconfig.cache
 /Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/ref/dsv mini.dll
+/Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/Debug/net10.0/compressed/r5lhvnvqqg-{0}-t4cgc4agq1-t4cgc4agq1.gz
