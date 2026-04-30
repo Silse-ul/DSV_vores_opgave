@@ -13,21 +13,27 @@ public class Meeting
     
     public string Description { get; set; }
     
+    public string ImagePath { get; set; }
+    
     public int Id { get; set; }
+    
+    
     
     private static int MeetingCounter = 0;
 
-    public Meeting(string name, int numberOfSeats, string room, string description)
+    public Meeting(string name, int numberOfSeats, string room, string description ,string imagePath)
     {
         Name = name;
         NumberOfSeats = numberOfSeats;
         Room = room;
         Description = description;
         Id =  MeetingCounter++;
+        ImagePath =  imagePath;
     }
 
-    public Meeting( DateTime startTime, DateTime endTime ,string name , int numberOfSeats, string room, string description) 
-    : this ( name, numberOfSeats, room, description)
+    public Meeting(DateTime startTime, DateTime endTime, string name, int numberOfSeats, string room,
+        string description, string imagePath) 
+    : this ( name, numberOfSeats, room, description, imagePath )
     {
        
         StartTime = startTime;

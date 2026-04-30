@@ -12,18 +12,14 @@
 
     @foreach (Meeting item in Model.Meetings)
     {
-    <div class="card mb-3">
-        <div class="card-body">
-            <div class="d-flex flex-column flex-lg-row">
-            <span class="avatar avatar-text rounded-3 me-4 mb-2">
-                <a asp-page="details" asp-route-id="@item.Id">@item.Name</a>
 
-            </span>
-
+        <div class=" card border-primary mb-3" style="max-width: 98rem;">
+            <div class="card-header fw-bolder fs-3">@item.Name</div>
+            <div class="card-body text-primary">
+                <h5 class="card-title">Lokale: @item.Room</h5>
+                <p class="card-text">I dette mødelokale er der plads til: @item.NumberOfSeats </p>
+                <a href="details" href-route-id="@item.Id "class=" streached-link btn btn-primary">Book </a>
             </div>
-
         </div>
-
-    </div>
-    }
-    
+        
+    }    
