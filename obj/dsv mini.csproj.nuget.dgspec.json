@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ceciliepedersen/Documents/GitHub/DSV_vores_opgave/dsv mini.csproj": {}
+    "/Users/sillajohanne/RiderProjects/DSV_vores_opgave/dsv mini.csproj": {}
   },
   "projects": {
-    "/Users/ceciliepedersen/Documents/GitHub/DSV_vores_opgave/dsv mini.csproj": {
+    "/Users/sillajohanne/RiderProjects/DSV_vores_opgave/dsv mini.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ceciliepedersen/Documents/GitHub/DSV_vores_opgave/dsv mini.csproj",
+        "projectUniqueName": "/Users/sillajohanne/RiderProjects/DSV_vores_opgave/dsv mini.csproj",
         "projectName": "dsv mini",
-        "projectPath": "/Users/ceciliepedersen/Documents/GitHub/DSV_vores_opgave/dsv mini.csproj",
-        "packagesPath": "/Users/ceciliepedersen/.nuget/packages/",
-        "outputPath": "/Users/ceciliepedersen/Documents/GitHub/DSV_vores_opgave/obj/",
+        "projectPath": "/Users/sillajohanne/RiderProjects/DSV_vores_opgave/dsv mini.csproj",
+        "packagesPath": "/Users/sillajohanne/.nuget/packages/",
+        "outputPath": "/Users/sillajohanne/RiderProjects/DSV_vores_opgave/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ceciliepedersen/.nuget/NuGet/NuGet.Config"
+          "/Users/sillajohanne/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -39,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
