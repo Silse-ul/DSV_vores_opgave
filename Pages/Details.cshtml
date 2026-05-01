@@ -27,7 +27,7 @@
         <img class="rounded img-fluid" src="~/@Model.mt.ImagePath" alt="Robots in the Park">
         <h6 class="mt-2">@Model.mt.Name</h6>
         <h6 class="text-wrap"> @Model.mt.Description</h6>
-        <a href="" class="stretched-link text-decoration-none d-inline-block bg-primary rounded-2 text-white px-2 py-1">
+        <a asp-page="CreateBooking"asp-route-roomId="@Model.mt.Id" class="text-decoration-none d-inline-block bg-primary rounded-2 text-white px-2 py-1">
             book nu </a>
     </div>
 

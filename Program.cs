@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IMeetingRepository, MeetingRepository>();
 builder.Services.AddSingleton<MeetingService>();
+builder.Services.AddSingleton<IBookingSystemRepo, BookingSystemRepo>();
+
 
 var app = builder.Build();
 

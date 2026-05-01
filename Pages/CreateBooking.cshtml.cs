@@ -8,7 +8,7 @@ namespace dsv_mini.Pages;
 
 public class CreateBooking : PageModel
 {
-    private IBookingSystemRepo _repo;
+    public IBookingSystemRepo _repo;
 
     public CreateBooking(IBookingSystemRepo repo)
     {
@@ -36,8 +36,5 @@ public class CreateBooking : PageModel
         // Send user tilbage til oversigten eller detaljesiden efter succes
         return RedirectToPage("/CreateBooking", new { id = NewBooking.RoomId });
     }
-    public void OnGet()
-    {
-        
-    }
+   
 }
