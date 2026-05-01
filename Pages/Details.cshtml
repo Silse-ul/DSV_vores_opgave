@@ -2,7 +2,7 @@
 @model dsv_mini.Pages.Details
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Home page";
 }
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
 <html>
 <head>
     <title>DSV møde bookning</title>
-    <div class="text-center">
+    <div class="text-center mt-4">
         <h1 class="display-4">DSV mødelokaler</h1>
     </div>
 </head>
@@ -22,13 +22,14 @@
 </div>
 <hr/>
 
-<div class="container-lg">
-    <div class="position-relative bg-info p-4 text-white" style="width:700px;">
-        <img class="rounded img-fluid" src="~/@Model.mt.ImagePath" alt="Robots in the Park">
-        <h6 class="mt-2">@Model.mt.Name</h6>
-        <h6 class="text-wrap"> @Model.mt.Description</h6>
-        <a asp-page="CreateBooking"asp-route-roomId="@Model.mt.Id" class="text-decoration-none d-inline-block bg-primary rounded-2 text-white px-2 py-1">
-            book nu </a>
+<div class="container d-flex justify-content-center">
+    <div class="position-center bg-info rounded-1 p-4 text-white" style="width:1400px;">
+        <img class="rounded img-fluid " src="~/@Model.mt.ImagePath" alt="Robots in the Park">
+        <h6 class="mb-3 fs-2 fw-bold">@Model.mt.Name</h6>
+        <h6 class="mb-3 fs-4">Kapasitet @Model.mt.NumberOfSeats personer </h6>
+        <h6 class="text-wrap fs-4 mb-3" > @Model.mt.Description</h6>
+        <a asp-page="CreateBooking"asp-route-roomId="@Model.mt.Id" class="text-decoration-none d-inline-block bg-primary rounded-1 text-white px-4 py-2 fs-4">
+            Book nu </a>
     </div>
 
 </div>

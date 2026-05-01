@@ -2,7 +2,7 @@
 @model dsv_mini.Pages.CreateBooking
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Home page";
 }
 
 <!DOCTYPE html>
@@ -18,43 +18,48 @@
     
 </div>
 
-<div class="text-center">
-    <h1 class="display-5 fw-normal">Opret booking for dette lokale </h1>
+<div class="text-center mt-5">
+    <h1 class="display-4 ">Opret booking for dette lokale </h1>
 </div>
-
+<hr/>
+<div class="container">  
 <form method="post">
     <!-- Skjult felt der husker hvilket lokale vi booker -->
     <input type="hidden" asp-for="NewBooking.RoomId" />
 
-    <div class="form-group">
+    <div class="mb-3">
         <label>Mødeansvarlig:</label>
         <input asp-for="NewBooking.Organizer" class="form-control" />
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label>Start:</label>
         <input asp-for="NewBooking.StartTime" type="datetime-local" class="form-control" />
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label>Slut:</label>
         <input asp-for="NewBooking.EndTime" type="datetime-local" class="form-control" />
     </div>
 
-    <div class="form-group">
+    <div class="mb-3">
         <label>Evt. kommentar:</label>
         <input asp-for="NewBooking.Comment" type="text" class="form-control" />
     </div>
 
-    <button type="submit" class="btn btn-primary">Bekræft booking</button>
+    <button type="submit" class="btn btn-primary ">Bekræft booking</button>
 </form>
+
+
 
 @if (TempData["SuccessMessage"] != null)
 {
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
         @TempData["SuccessMessage"]
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <button type="button" class="btn-close mb-3 mt3" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
+</div>
+
 </body>
 </html>
