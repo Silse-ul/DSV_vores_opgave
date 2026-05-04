@@ -1,3 +1,4 @@
+using dsv_mini.Meetingroom;
 using dsv_mini.model;
 using dsv_mini.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -8,12 +9,14 @@ namespace dsv_mini.Pages;
 
 public class CreateBooking : PageModel
 {
-    private IBookingSystemRepo _repo;
+    public IBookingSystemRepo _repo;
 
     public CreateBooking(IBookingSystemRepo repo)
     {
         _repo = repo;
     }
+    
+    
 
     [BindProperty]
     public Bookingsystem NewBooking { get; set; }
@@ -36,8 +39,5 @@ public class CreateBooking : PageModel
         // Send user tilbage til oversigten eller detaljesiden efter succes
         return RedirectToPage("/CreateBooking", new { id = NewBooking.RoomId });
     }
-    public void OnGet()
-    {
-        
-    }
+   
 }

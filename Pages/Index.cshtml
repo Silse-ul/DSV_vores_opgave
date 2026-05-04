@@ -2,13 +2,13 @@
 @using dsv_mini.Meetingroom
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["oversigt"] = "Home page";
 }
 
 <div class="text-center">
     <h1 class="display-4">DSV mødelokaler</h1>
 </div>
-
+<hr/>
 
     @foreach (Meeting item in Model.Meetings)
     {
